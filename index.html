@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Phiếu thu phòng</title>
+  </head>
+  <body>
+    <form class="phieu">
+      <div class="icon">
+        <img src="./img/logo.png" alt="" />
+        <p>Phiếu thu phòng</p>
+        <div class="close">
+          <i class="fa-solid fa-minus"></i>
+          <i class="fa-regular fa-square"></i>
+          <i class="fa-solid fa-xmark"></i>
+        </div>
+      </div>
+      <div class="container">
+        <div class="thongtin">
+          <p class="title">Thông tin chi tiết</p>
+          <div class="all">
+            <div class="so-phieu">
+              <label for="so-phieu-1">Số phiếu:</label>
+              <input type="text" placeholder="11101204" class="text-phieu" />
+            </div>
+            <div class="so-phieu-a">
+              <label for="khach-hang">Khách hàng:</label>
+              <select name="khach-hang" id="khach-hang">
+                <option value="1"></option>
+                <option value="2">1</option>
+                <option value="3">2</option>
+                <option value="4">3</option>
+                <option value="5">4</option>
+                <option value="6">5</option>
+              </select>
+            </div>
+            <div class="so-phieu-a">
+              <label for="khach-hang">Người lập:</label>
+              <select name="khach-hang" id="nguoi-lap">
+                <option value="1">Nguyễn Văn Hùng</option>
+                <option value="2">Mai Thị A</option>
+                <option value="3">Trần Thị B</option>
+              </select>
+            </div>
+            <div class="so-phieu-a">
+              <label for="khach-hang">Nv phục vụ:</label>
+              <select name="khach-hang" id="phuc-vu">
+                <option value="1"></option>
+                <option value="2">Mai Thị A</option>
+                <option value="3">Trần Thị B</option>
+              </select>
+            </div>
+            <div class="loai-phong">
+              <div class="loai">
+                <label for="loai-phong">Loại phòng:</label>
+                <select name="loai-phong" id="loai-phong">
+                  <option value="1">Phòng đơn</option>
+                  <option value="2">Phòng đôi</option>
+                </select>
+              </div>
+              <div class="ngay">
+                <label for="so-ngay">Số ngày:</label>
+                <input type="text" class="number" />
+              </div>
+            </div>
+            <div class="loai-phong-a">
+              <div class="loai">
+                <label for="loai-phong">Phòng:</label>
+                <select name="loai-phong" id="loai-phong-b">
+                  <option value="1">Phòng đơn</option>
+                  <option value="2">Phòng đôi</option>
+                </select>
+              </div>
+              <div class="ngay">
+                <label for="so-ngay">Số người:</label>
+                <input type="text" class="number-a" />
+              </div>
+            </div>
+            <div class="loai-hinh">
+              <div class="loai-hinh-a">
+                <label for="loai-hinh">Loại hình:</label>
+                <select name="loai-hinh" id="loai-hinh-b">
+                  <option value="1">Theo ngày</option>
+                  <option value="2">Theo giờ</option>
+                </select>
+              </div>
+              <div class="price">
+                <input type="text" class="price-b" />
+              </div>
+            </div>
+            <div class="loai-ma">
+              <div class="loai-ma-a">
+                <label for="loai-ma">Mã ĐP:</label>
+                <select name="loai-ma" id="loai-ma-b">
+                  <option value="1"></option>
+                  <option value="2">Mã ĐP 01</option>
+                </select>
+              </div>
+              <div class="price">
+                <input type="text" class="ma-b" />
+              </div>
+            </div>
+            <div class="kho-khu-vuc">
+              <label for="kho-khu-vuc-a">Kho-Khu-vực:</label>
+              <select name="kho-khu-vuc-b" id="kho-khu-vuc-c">
+                <option value="1">Kho Hotel</option>
+                <option value="2">Kho vàng</option>
+                <option value="3">Kho tiền</option>
+              </select>
+            </div>
+          </div>
+          <div class="all-b">
+            <div class="dong-ho">
+              <div class="ngay-o">
+                <label for="ngay-o">Ngày ở:</label>
+                <select name="ngay-o" class="ngay-o-a">
+                  <option value="1">12/10/2011</option>
+                  <option value="2">13/10/2011</option>
+                  <option value="3">14/10/2011</option>
+                </select>
+              </div>
+              <div>
+                <button class="clock">Đồng hồ</button>
+              </div>
+            </div>
+            <div class="ngay-tra">
+              <label for="ngay-tra">Ngày trả:</label>
+              <select name="ngay-tra" class="ngay-tra-a">
+                <option value="1">12/10/2011</option>
+                <option value="2">13/10/2011</option>
+                <option value="3">14/10/2011</option>
+              </select>
+            </div>
+            <div class="time">
+              <label for="time">Thời gian vào-ra:</label>
+              <input type="text" placeholder="11:18:47 AM" class="time-b" />
+              <input type="text" class="time-c" />
+              <input type="text" class="time-d" />
+            </div>
+            <div class="tien-an">
+              <label for="tien-phong-an">Tiền phòng/ăn</label>
+              <input type="text" placeholder="0" class="tien-an-c" />
+              <input type="text" placeholder="520.000" class="tien-an-d" />
+            </div>
+            <div class="tong-tien">
+              <label for="tong-tien">Tổng tiền:</label>
+              <input type="text" placeholder="520.000" class="tong-tien-a" />
+            </div>
+            <div class="tong-tien">
+              <label for="tien-mat-a">Tiền mặt:</label>
+              <input type="text" placeholder="520.000" class="tien-mat" />
+            </div>
+            <div class="tong-tien">
+              <label for="-cong-no">Công nợ:</label>
+              <input type="text" placeholder="0" class="cong-no-a" />
+            </div>
+            <div class="sale">
+              <label for="sale">Khuyến mãi:</label>
+              <select name="sale" class="sale-a">
+                <option value="1">0%</option>
+                <option value="2">20%</option>
+                <option value="3">40%</option>
+                <option value="4">60%</option>
+                <option value="5">80%</option>
+              </select>
+              <select name="tien1-phong" class="tien2-phong">
+                <option value="1">Tien phòng</option>
+                <option value="2">2 triệu</option>
+                <option value="3">20 triệu</option>
+                <option value="4">200 triệu</option>
+                <option value="5">2 tỷ</option>
+              </select>
+              <input type="text" placeholder="0" class="sale-b" />
+            </div>
+            <div class="km">
+              <label for="km-kh">KM KH</label>
+              <select name="sale" class="sale-a">
+                <option value="1">0%</option>
+                <option value="2">20%</option>
+                <option value="3">40%</option>
+                <option value="4">60%</option>
+                <option value="5">80%</option>
+              </select>
+              <input type="text" placeholder="0" class="km-a" />
+            </div>
+          </div>
+        </div>
+        <div class="ghi-chu">
+          <label for="ghi-chu">Ghi chú:</label>
+          <input type="text" class="ghi-chu-a" />
+        </div>
+        <div class="hang-giua">
+          <div class="hop">
+            <label for="khach-hang">Khách hàng</label>
+            <input type="text" class="kh" />
+          </div>
+          <div class="ck">
+            <input type="checkbox" class="checkbox" />
+            <label>Xem trước khi in</label>
+            <button class="thanh-toan">Thanh toán</button>
+          </div>
+        </div>
+        <div class="hang-cuoi">
+          <table width="auto" border="1">
+            <tr class="hang-1">
+              <th><strong>&#32;</strong></th>
+              <th>STT</th>
+              <th>Sản phẩm</th>
+              <th>Tên sản phẩm</th>
+              <th>ĐVT</th>
+              <th>SL gọi</th>
+              <th>SL trả</th>
+              <th>Số lượng</th>
+              <th>Đơn giá</th>
+              <th>Thành tiền</th>
+            </tr>
+            <tr class="hang-2">
+              <td class="x"></td>
+              <td><input type="text" placeholder="1" class="stt" /></td>
+              <td><input type="text" placeholder="100" class="san-pham" /></td>
+              <td>
+                <input
+                  type="text"
+                  placeholder="Bia Hà Nội"
+                  class="ten-san-pham"
+                />
+              </td>
+              <td><input type="text" placeholder="chai" class="chai" /></td>
+              <td><input type="text" placeholder="10" class="sl-goi" /></td>
+              <td><input type="text" placeholder="0" class="sl-goi" /></td>
+              <td><input type="text" placeholder="10" class="sl" /></td>
+              <td><input type="text" placeholder="22.000" class="sl" /></td>
+              <td><input type="text" placeholder="22.000" class="sl" /></td>
+            </tr>
+            <tr class="hang-2">
+              <td class="x">X</td>
+              <td><input type="text" placeholder="2" class="stt" /></td>
+              <td><input type="text" placeholder="121" class="san-pham" /></td>
+              <td>
+                <input type="text" placeholder="Heriken" class="ten-san-pham" />
+              </td>
+              <td><input type="text" placeholder="chai" class="chai" /></td>
+              <td><input type="text" placeholder="2" class="sl-goi" /></td>
+              <td><input type="text" placeholder="0" class="sl-goi" /></td>
+              <td><input type="text" placeholder="2" class="sl" /></td>
+              <td><input type="text" placeholder="30.000" class="sl" /></td>
+              <td><input type="text" placeholder="30.000" class="sl" /></td>
+            </tr>
+            <tr class="hang-2">
+              <td class="x">*</td>
+              <td><input type="text" class="stt" /></td>
+              <td><input type="text" class="san-pham" /></td>
+              <td>
+                <input type="text" class="ten-san-pham" />
+              </td>
+              <td><input type="text" class="chai" /></td>
+              <td><input type="text" class="sl-goi" /></td>
+              <td><input type="text" class="sl-goi" /></td>
+              <td><input type="text" class="sl" /></td>
+              <td><input type="text" class="sl" /></td>
+              <td><input type="text" class="sl" /></td>
+            </tr>
+          </table>
+        </div>
+        <div class="footer">
+          <button class="nhap">Nhập mới</button>
+          <button class="cap-nhat">Cập nhật</button>
+          <button class="cap-nhat">In phiếu</button>
+          <button class="cap-nhat">Bỏ qua</button>
+          <button class="nhap">Sửa</button>
+          <button class="nhap">Xóa</button>
+          <button class="cap-nhat">Thoát</button>
+        </div>
+      </div>
+    </form>
+  </body>
+</html>
